@@ -1,0 +1,3 @@
+To run test cases 11, 12, 13
+To do confirmation testing with test cases on version 2.0 
+Use link : http://ssu-oms.training.local:8180/OMS
