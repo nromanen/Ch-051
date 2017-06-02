@@ -142,7 +142,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,'Tania','Burshtein',2,1),(2,'Yuriy','Malyk',1,1),(3,'Zina','Aksonova',2,1),(4,'Olia','Nikitina',1,1),(5,'Cristiano','Ronaldo',4,2),(6,'Garet','Bale',4,2),(7,'Marcelo','Viera',4,2),(8,'Danilo','Silva',3,2),(9,'Lucy','Freeman',5,3),(10,'Lina','Popesku',5,3),(11,'Martin','Onchul',6,3),(12,'Lara','Kurbul',6,3),(13,'Peter','Swong',7,4),(14,'Nick','Lupen',8,4),(15,'Anna','Bugu',7,4),(16,'Liza','Shani',8,4),(17,'John','Rid',9,5),(18,'Jack','Rud',9,5),(19,'Jim','Rod',10,5),(20,'Joy','Red',10,5);
+INSERT INTO `customer` VALUES (1,'Tania','Burshtein',2,1),(2,'Yuriy','Malyk',1,1),(3,'Zina','Aksonova',2,1),(4,'Olia','Nikitina',1,1),(5,'Cristiano','Ronaldo',4,2),(6,'Garet','Bale',4,2),(7,'Marcelo','Viera',4,2),(8,'Danilo','Silva',3,2),(9,'Lucy','Freeman',5,3),(10,'Lina','Popesku',5,3),(11,'Martin','Onchul',6,3),(12,'Lara','Kurbul',6,3),(13,'Peter','Swong',7,4),(14,'Nick','Lupen',8,4),(15,'Anna','Bugu',7,4),(16,'Liza','Shani',8,4),(17,'John','Rid',9,5),(18,'Jack','Rud',9,5),(19,'Jim','Rod',10,5),(20,'Joy','Red',10,5), (21,'Margaret','Black',10,5);
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
