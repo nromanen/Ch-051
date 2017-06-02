@@ -289,3 +289,5 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2017-05-28 18:39:50
+INSERT INTO `order`.`country` (`ID_COUNTRY`, `COUNTRY`) VALUES ('8', 'Romania');
+INSERT INTO `order`.`country` (`ID_COUNTRY`, `COUNTRY`) VALUES ('9', 'Russia');
