@@ -1,3 +1,4 @@
+
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: localhost    Database: order
@@ -60,7 +61,7 @@ CREATE TABLE `chief` (
 
 LOCK TABLES `chief` WRITE;
 /*!40000 ALTER TABLE `chief` DISABLE KEYS */;
-INSERT INTO `chief` VALUES (1,'Stirm','Anneke'),(2,'Smith','Kate'),(3,'Sour','Ralph'),(4,'Spring','Nick'), (5, 'Sweeny', 'Tod');
+INSERT INTO `chief` VALUES (1,'Stirm','Anneke'),(2,'Smith','Kate'),(3,'Sour','Ralph'),(4,'Spring','Nick');
 /*!40000 ALTER TABLE `chief` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -288,5 +289,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-05-29 14:17:37
+
+
+INSERT INTO `order`.`country` (`ID_COUNTRY`, `COUNTRY`) VALUES ('8', 'Romania');
+INSERT INTO `order`.`country` (`ID_COUNTRY`, `COUNTRY`) VALUES ('9', 'Russia');
 

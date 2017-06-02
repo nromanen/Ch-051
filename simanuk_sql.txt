@@ -1,0 +1,103 @@
+Запити SQL
+
+Query1
+
+SELECT
+employee.ID_EMPLOYEE,employee.FIRST_NAME,employee.LAST_NAME,employee.BIRTH_DATE
+FROM employee
+WHERE employee.ID_EMPLOYEE=8
+
+Query6
+
+SELECT
+MIN(TIMESTAMPDIFF(year,employee.BIRTH_DATE,CURDATE())) AS `the smallest age`,
+MAX(TIMESTAMPDIFF(year,employee.BIRTH_DATE,CURDATE())) AS `the greatest age`,
+AVG(TIMESTAMPDIFF(year,employee.BIRTH_DATE,CURDATE())) AS `the average age`
+FROM
+employee
+INNER JOIN city ON city.ID_CITY = employee.ID_CITY
+WHERE city.CITY='London'
+
+Query11
+
+SELECT city.CITY
+FROM employee INNER JOIN city ON employee.ID_CITY = city.ID_CITY
+GROUP BY city.CITY
+
+Queery16
+
+SELECT
+employee.FIRST_NAME, employee.LAST_NAME,
+COUNT(`order`.ID_ORDER) AS 'number of orders'
+FROM employee
+LEFT JOIN `order` ON employee.ID_EMPLOYEE = order.ID_EMPLOYEE
+AND  `order`.REC_DATE>'2017-04-01'
+GROUP BY employee.ID_EMPLOYEE
+
+Query21
+
+SELECT
+customer.FIRST_NAME,
+customer.LAST_NAME,
+`order`.ID_ORDER,
+order_item.QUANTITY,
+order_item.QUANTITY*product.PRICE AS amount
+FROM
+customer,
+`order`,
+order_item,
+product
+WHERE
+customer.ID_CUSTOMER=`order`.ID_CUSTOMER and `order`.ID_ORDER=order_item.ID_ORDER
+AND order_item.ID_PRODUCT=product.ID_PRODUCT
+AND product.`NAME`='Chocolate'
+
+або
+
+SELECT
+customer.FIRST_NAME,
+customer.LAST_NAME,
+`order`.ID_ORDER,
+order_item.QUANTITY,
+order_item.QUANTITY*product.PRICE AS amount
+FROM
+customer
+INNER JOIN `order` ON customer.ID_CUSTOMER = `order`.ID_CUSTOMER
+INNER JOIN order_item ON order.ID_ORDER = order_item.ID_ORDER
+INNER JOIN product ON order_item.ID_PRODUCT = product.ID_PRODUCT
+WHERE product.`NAME`='chocolate'
+
+Query26
+
+SELECT
+country.ID_COUNTRY AS currid,
+country.COUNTRY,
+(SELECT
+SUM(order_item.QUANTITY*product.PRICE) AS domamount
+FROM
+`order`
+INNER JOIN order_item ON `order`.ID_ORDER = order_item.ID_ORDER
+INNER JOIN product ON order_item.ID_PRODUCT = product.ID_PRODUCT
+WHERE `order`.ID_COUNTRY = product.ID_COUNTRY AND `order`.ID_COUNTRY = currid
+GROUP BY `ORDER`.ID_COUNTRY) 
+AS DomesticAmount,
+(SELECT
+SUM(order_item.QUANTITY*product.PRICE) AS nondomamount
+FROM
+`order`
+INNER JOIN order_item ON `order`.ID_ORDER = order_item.ID_ORDER
+INNER JOIN product ON order_item.ID_PRODUCT = product.ID_PRODUCT
+WHERE `order`.ID_COUNTRY != product.ID_COUNTRY AND `order`.ID_COUNTRY = currid
+GROUP BY `ORDER`.ID_COUNTRY)
+AS NonDomesticAmount
+FROM
+country
+
+Query31
+
+INSERT INTO employee VALUES (11, 'Ivan','Guy','1992-10-01',9,5,'Olena');
+INSERT INTO employee VALUES (12, 'Masha','Gun','1993-10-01',10,5,'Olena');
+INSERT INTO employee VALUES (13, 'Mila','Ivo','1994-10-01',9,5,'Olena');
+INSERT INTO employee VALUES (14, 'Ken','Ring','1995-10-01',10,5,'Olena');
+INSERT INTO employee VALUES (15, 'Klara','Bond','1996-10-01',9,5,'Olena')
+
