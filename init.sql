@@ -289,4 +289,10 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+<<<<<<< HEAD
 -- Dump completed on 2017-05-29 14:17:37
+=======
+-- Dump completed on 2017-05-28 18:39:50
+INSERT INTO `order`.`country` (`ID_COUNTRY`, `COUNTRY`) VALUES ('8', 'Romania');
+INSERT INTO `order`.`country` (`ID_COUNTRY`, `COUNTRY`) VALUES ('9', 'Russia');
+>>>>>>> 2a5eb228a65513887d55b27d2df9b997b00b67c1
