@@ -1,0 +1,52 @@
+4.
+SELECT first_name, last_name
+ FROM employee 
+WHERE birth_date < '1962-01-01' 
+ORDER BY last_name desc;
+
+9.  
+
+SELECT first_name, last_name
+FROM employee 
+WHERE birth_date = 
+(SELECT MIN(birth_date ) FROM employee );
+
+14. 
+
+SELECT employee.first_name, employee.last_name,
+COUNT(`order`.id_order) AS 'orders number'
+FROM employee
+LEFT JOIN `order` ON employee.id_employee = `order`.id_employee
+WHERE `Order`.Rec_Date BETWEEN '2017-01-01' AND '2017-12-31'
+GROUP BY employee.id_employee;
+
+19. 
+SELECT customer.last_name, country.id_country
+ FROM customer, country, `order` 
+WHERE customer.id_country=country.id_country and country.country = ‘France’ 
+AND customer.id_customer = `order`.id_customer
+ GROUP BY customer.id_customer 
+HAVING COUNT(`order`.id_customer)  > 1;
+
+24.  
+
+SELECT customer.last_name, `order`.id_customer , product.id_country 
+FROM customer, `order`, product, order_item, country 
+WHERE order_item.id_product = product. id_product and product.id_country = country.id_country 
+AND country.country = ‘France’ AND `order`.id_order = order_item.id_order AND customer.id_customer = `order`. id_customer;
+
+29. 
+
+SELECT employee.Last_Name, chief.lastname
+ FROM employee
+LEFT JOIN chief ON employee.id_chief=chief.id_chief
+ORDER BY employee.last_name;
+
+
+34. 
+
+UPDATE employee
+SET hiredate = '2017-05-25'
+WHERE id_employee >= 1;
+
+

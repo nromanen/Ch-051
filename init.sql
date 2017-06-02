@@ -60,7 +60,7 @@ CREATE TABLE `chief` (
 
 LOCK TABLES `chief` WRITE;
 /*!40000 ALTER TABLE `chief` DISABLE KEYS */;
-INSERT INTO `chief` VALUES (1,'Stirm','Anneke'),(2,'Smith','Kate'),(3,'Sour','Ralph'),(4,'Spring','Nick');
+INSERT INTO `chief` VALUES (1,'Stirm','Anneke'),(2,'Smith','Kate'),(3,'Sour','Ralph'),(4,'Spring','Nick'), (5, 'Sweeny', 'Tod');
 /*!40000 ALTER TABLE `chief` ENABLE KEYS */;
 UNLOCK TABLES;
 
