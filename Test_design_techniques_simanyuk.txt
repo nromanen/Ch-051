@@ -1,0 +1,15 @@
+Variant 4
+1.	Equivalence partitioning and Boundary value analysis
+In a system designed for postal services' payment: Letters up to 100g are called as ‘light letters’. Postal rates for sending the light letters up to 10g are $25. The next 40g should be played by $35. Each next 25g up to 100g should be played by an extra $10.  
+Partitions should be designed for “grams”.
+1.	Build equivalence classes (partitions) based on given information
+2.	Stand Out boundary values
+3.	Cover requirements above by tests (write test cases’ names and objectives) based on equivalence partitioning and boundary value analysis 
+
+2.	Decision tables
+If you are a new customer of Apple store and you made a purchase on $500 and more, you will get a voucher on 10% discount for today’s purchase. If your purchase worth is less than $500, then you will get a voucher on 5% discount for today’s purchase. If you are a gold customer of Apple store, then you will have 30% discount on all store assortments.
+1.	Build decision table based on given information
+
+3.	State transition
+To open a visa you need to pass a list of steps in standard procedure. At first you need to get consultation or read some materials about documents which should be provided. Then you should prepare these documents according to templates and give them to tour agency for verification. If there are mistakes in the documents, they should be re-developed. If documents are prepared correctly, then you should pay $80 for consular fee and pass interview with consul. If embassy accepts documents and you passed interview successfully, then you will get visa. If not, then you will need to try again.
+1.	Build state transition diagram based on given information
