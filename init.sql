@@ -1,3 +1,4 @@
+
 -- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: localhost    Database: order
@@ -60,7 +61,7 @@ CREATE TABLE `chief` (
 
 LOCK TABLES `chief` WRITE;
 /*!40000 ALTER TABLE `chief` DISABLE KEYS */;
-INSERT INTO `chief` VALUES (1,'Stirm','Anneke'),(2,'Smith','Kate'),(3,'Sour','Ralph'),(4,'Spring','Nick'), (5, 'Sweeny', 'Tod');
+INSERT INTO `chief` VALUES (1,'Stirm','Anneke'),(2,'Smith','Kate'),(3,'Sour','Ralph'),(4,'Spring','Nick');
 /*!40000 ALTER TABLE `chief` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,7 +143,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,'Tania','Burshtein',2,1),(2,'Yuriy','Malyk',1,1),(3,'Zina','Aksonova',2,1),(4,'Olia','Nikitina',1,1),(5,'Cristiano','Ronaldo',4,2),(6,'Garet','Bale',4,2),(7,'Marcelo','Viera',4,2),(8,'Danilo','Silva',3,2),(9,'Lucy','Freeman',5,3),(10,'Lina','Popesku',5,3),(11,'Martin','Onchul',6,3),(12,'Lara','Kurbul',6,3),(13,'Peter','Swong',7,4),(14,'Nick','Lupen',8,4),(15,'Anna','Bugu',7,4),(16,'Liza','Shani',8,4),(17,'John','Rid',9,5),(18,'Jack','Rud',9,5),(19,'Jim','Rod',10,5),(20,'Joy','Red',10,5), (21,'Margaret','Black',10,5);
+INSERT INTO `customer` VALUES (1,'Tania','Burshtein',2,1),(2,'Yuriy','Malyk',1,1),(3,'Zina','Aksonova',2,1),(4,'Olia','Nikitina',1,1),(5,'Cristiano','Ronaldo',4,2),(6,'Garet','Bale',4,2),(7,'Marcelo','Viera',4,2),(8,'Danilo','Silva',3,2),(9,'Lucy','Freeman',5,3),(10,'Lina','Popesku',5,3),(11,'Martin','Onchul',6,3),(12,'Lara','Kurbul',6,3),(13,'Peter','Swong',7,4),(14,'Nick','Lupen',8,4),(15,'Anna','Bugu',7,4),(16,'Liza','Shani',8,4),(17,'John','Rid',9,5),(18,'Jack','Rud',9,5),(19,'Jim','Rod',10,5),(20,'Joy','Red',10,5);
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -179,7 +180,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,'Valerii','Ivanov','1978-11-09',1,1,'burshtein',1,'2017-05-25'),(2,'Andriy','Kotenko','1986-05-30',2,1,'burshtein',2,'2017-05-25'),(3,'Papa','Peres','1954-08-16',4,2,'oleksiuk',3,'2017-05-25'),(4,'Donald','Trump','1946-06-14',3,2,'oleksiuk',4,'2017-05-25'),(5,'Peter','Johnes','1954-12-03',6,3,'Horodetska',1,'2017-05-25'),(6,'Mary','Strein','1963-08-11',5,3,'Horodetska',2,'2017-05-25'),(7,'Steven','Long','1987-05-12',7,4,'yasinska',3,'2017-05-25'),(8,'Amanda','Stress','1968-06-18',8,4,'yasinska',3,'2017-05-25'),(9,'Mark','Sven','1990-10-01',9,5,'Olena',4,'2017-05-25'),(10,'Max','Suy','1991-10-01',10,5,'Olena',4,'2017-05-25'),(11,'Jack','Sparrow','1987-12-15',12,7,'oleksiuk',4,'2017-05-23'),(12,'David','Laptop','1980-09-08',12,7,'oleksiuk',4,'2017-05-23'),(13,'Adele','Adkins','1987-11-14',12,7,'oleksiuk',4,'2017-05-23'),(14,'Petro','Ivanovich','1990-12-31',1,1,'oleksiuk',1,'2017-05-25'),(15,'Serg','Pavlenko','1954-04-12',2,1,'oleksiuk',1,'2017-04-25'),(16,'Isko','Dagama','1965-08-08',4,2,'oleksiuk',1,'2017-03-25'),(17,'Serhio','Alvenso','1975-09-15',3,2,'oleksiuk',1,'2017-03-25'),(18,'Djanko','Popesky','1998-04-18',6,3,'oleksiuk',3,'2017-02-25'),(19,'Lilian','Floreskun','1945-08-14',5,3,'oleksiuk',3,'2017-06-25'),(20,'JanAvgust','Lebol','1977-02-13',8,4,'oleksiuk',3,'2017-05-21'),(21,'Fransisko','Gotie','1983-01-01',8,4,'oleksiuk',2,'2017-05-21'),(22,'Jurek','Samsinskii','1985-01-03',11,6,'oleksiuk',2,'2017-05-21'),(107,'Fill','Deui','1990-06-28',7,4,'yasinska',4,'2017-05-25');
+INSERT INTO `employee` VALUES (1,'Valerii','Ivanov','1978-11-09',1,1,'burshtein',1,'2017-05-25'),(2,'Andriy','Kotenko','1986-05-30',2,1,'burshtein',2,'2017-05-25'),(3,'Papa','Peres','1954-08-16',4,2,'oleksiuk',3,'2017-05-25'),(4,'Donald','Trump','1946-06-14',3,2,'oleksiuk',4,'2017-05-25'),(5,'Peter','Johnes','1954-12-03',6,3,'Horodetska',1,'2017-05-25'),(6,'Mary','Strein','1963-08-11',5,3,'Horodetska',2,'2017-05-25'),(7,'Steven','Long','1987-05-12',7,4,'yasinska',3,'2017-05-25'),(8,'Amanda','Stress','1968-06-18',8,4,'yasinska',3,'2017-05-25'),(9,'Mark','Sven','1990-10-01',9,5,'Olena',4,'2017-05-25'),(10,'Max','Suy','1991-10-01',10,5,'Olena',4,'2017-05-25'),(11,'Jack','Sparrow','1987-12-15',12,7,'oleksiuk',4,'2017-05-23'),(12,'David','Laptop','1980-09-08',12,7,'oleksiuk',4,'2017-05-23'),(13,'Adele','Adkins','1987-11-14',12,7,'oleksiuk',4,'2017-05-23'),(14,'Petro','Ivanovich','1990-12-31',1,1,'oleksiuk',1,'2017-05-25'),(15,'Serg','Pavlenko','1954-04-12',2,1,'oleksiuk',1,'2017-04-25'),(16,'Isko','Dagama','1965-08-08',4,2,'oleksiuk',1,'2017-03-25'),(17,'Serhio','Alvenso','1975-09-15',3,2,'oleksiuk',1,'2017-03-25'),(18,'Djanko','Popesky','1998-04-18',6,3,'oleksiuk',3,'2017-02-25'),(19,'Lilian','Floreskun','1945-08-14',5,3,'oleksiuk',3,'2017-06-25'),(20,'JanAvgust','Lebol','1977-02-13',8,4,'oleksiuk',3,'2017-05-21'),(21,'Fransisko','Gotie','1983-01-01',8,4,'oleksiuk',2,'2017-05-21'),(22,'Jurek','Samsinskii','1985-01-03',11,6,'oleksiuk',2,'2017-05-21'),(23,'Peter','Swift','1975-12-06',12,7,'horodetska',3,'2016-05-12'),(24,'Kate','Slow','1968-11-03',11,6,'horodetska',2,'2014-05-12'),(25,'Thor','Odinovich','1978-07-03',9,5,'horodetska',4,'2012-07-12'),(26,'Loki','Ragnarok','1978-06-05',10,5,'horodetska',4,'2011-08-12'),(27,'Freja','Northern','1958-12-08',9,5,'horodetska',3,'2005-07-12'),(28,'Bard','Gamer','1988-09-18',2,1,'horodetska',2,'2015-08-22'),(29,'Drack','Immortal','1948-10-28',5,3,'horodetska',1,'2006-09-25'),(107,'Fill','Deui','1990-06-28',7,4,'yasinska',4,'2017-05-25');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -288,4 +289,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-05-28 18:39:50
+-- Dump completed on 2017-05-29 14:17:37
