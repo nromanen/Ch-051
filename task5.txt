@@ -1,0 +1,20 @@
+Variant 5
+1.	Equivalence partitioning and Boundary value analysis
+A system designed for replenishing mobile phone where min replenishment is 5$ and max replenishment is 1000$. There is no commission if user enters less than 50$. User will pay 1% of replenishment when it is less than 500$.  In case the replenishment is equal or bigger than 500$, the user will pay 3% of commission.
+1.	Build equivalence classes (partitions) based on given information
+2.	Stand Out boundary values
+
+2.	Decision tables
+You want to buy travel card of some transport network (works during 1 month). The following types of discount exist:
+- For Student – gives you 20% discount if you are student;
+- Pensioner– gives you 10% discount, available if you are 60 years old and more (cannot be used with Student discount)
+You can get additional 5% discount if you are buying such travel cards during the last 6 months in a row.
+
+1.	Build decision table based on given information.
+2.	Cover requirements above by tests (write test cases’ names and objectives) based on decision table analysis
+
+3.	State transition
+User wants to pay for using the Internet with Payment card. He enters amount of money he needs to pay, e-mail and press the “Next” button. If entered amount of money is not allowed the user will be asked to correct the sum. In other case will be redirected on payment page. On this page user should enter the 16-digit number of card, period of validity and code of CVV2/CVC2 and then press “Pay”. If entered info is correct user will get email-notification on his email that operation completed success. If some data were entered incorrectly, user will get error-notification on the screen and he should correct it and again press “Pay”.
+1.	Build state transition diagram based on given information
+
+ 
