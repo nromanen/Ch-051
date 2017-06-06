@@ -1,0 +1,20 @@
+Task is:
+1.	Design tests applying test design techniques
+2.	Create Test Cases in Zephyr for JIRA for all designed tests
+
+Variant 7
+1.	Equivalence partitioning and Boundary value analysis
+Student has to get at least 20 score to successfully pass the 1st step of entrance exam and to be allowed to move to the next one. If student managed to get more than 36 score he will be automatically enrolled to the university. The maximum that he can get is 40 score. 
+
+1.	Build equivalence classes (partitions) based on given information
+2.	Stand Out boundary values
+3.	Cover requirements above by tests (write test cases’ names and objectives) based on equivalence partitioning and boundary value analysis
+
+2.	Decision tables
+Supplier has a system of discounts to be provided to outlets he works with. An outlet has a constant 20% discount to any product in any order if this outlet is from the partners list. Another type of discount is a 15% discount provided for the product if more than 10 units are ordered. Besides these, the 10% discount might be provided for some products within promotional periods. The last type of discount can’t be used by outlets with constant discount.
+1.	Build decision table based on given information.
+
+3.	State transition
+To buy an train e-ticket user has to select the departure and destination cities, and travel date and click “Search”. When the system finds appropriate trains user can select appropriate train for him and select a place from the list of available places. To continue the ticket ordering user enters his Last Name and First Name, e-mail and clicks “Pay”. If data is entered incorrectly error-message will be shown: “Please, re-enter your personal data”. If data entered correctly user will be redirected on payment page. On this page user should enter the 16-digit number of card, period of validity and code of CVV2/CVC2 and then press “Pay”. If entered data is correct, user will get email-notification that operation completed successfully. In other case user will get error message on the screen and will be asked to correct data and press “Pay” again.
+
+1.	Build state transition diagram based on given information
