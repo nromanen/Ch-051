@@ -1,0 +1,18 @@
+Variant 3
+1.Equivalence partitioning and Boundary value analysis
+Internal telephone system for a company with 100 telephones has 3-digit extension numbers from 100 to 199. In a system designed to support registration of telephone number user should enter unique phone number and user’s first and last names. 
+Partitions should be designed for phone number field.
+1.Build equivalence classes (partitions) based on given information
+2.Stand Out boundary values
+
+2.Decision tables
+If you are a new customer opening a credit card account, you will get a 5% discount on all your purchases today. If you are an existing customer and works with bank more than a year, you will get a 15% discount. If you are a bank client and works with bank less than a year, you will get a 10% discount. If you have a coupon, you can get 20% off today (but it can't be used with the 'new customer' and ‘less than a year existing customer’ discounts).
+1.Build decision table based on given information
+
+3.State transition
+User sends message using mobile phone. He enters a text of a message, and then phone number of recipient and click ‘Send’. Assume that delivery report option is enabled. If user gets positive delivery report, then message will be delivered to recipient. If not, then message will be stored on server for 12 hours. If recipient turns on the phone until 12 hours over, then message will be delivered. If not, then user will get negative delivery report and should re-send message again.
+1.Build state transition diagram based on given information
+2.Cover requirements above by tests (write test cases’ names and objectives) based on state transition analysis
+
+
+
