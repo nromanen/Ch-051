@@ -1,0 +1,16 @@
+Variant 6
+1.	Equivalence partitioning and Boundary value analysis
+A system is designed to calculate the electricity cost. User can enter only an old and a new values of electricity counter and press Calc button. If data entered correctly and user consumed less than 100 kw the price of 1 kw will be 25 cents. The calculator will count 1$ per 1 kw for more than 600 kw. In another case it will count 65 cents per 1 kw.
+1. Build equivalence classes (partitions) based on given information
+2. Stand Out boundary values
+
+2.	Decision tables
+If you are a new client in the caffe you get a discount card with 0 points. Every time you make an order in a caffe you will receive points on the card. If you are existing customer and have on your discount card more than 5 000 points you will get 10% discounts every time you visit the caffe. If you have a Gift Coupon – you will get one-time 25% discount. This discount cannot be used with discount card but points will added to card.
+
+1.	Build decision table based on given information.
+
+3.	State transition
+User is doing an order on the web-store. He selects some goods from the catalog and clicks on “Add to cart” button. If one/more selected goods aren’t available user will get the corresponding message and will be asked to correct the selection. If all selected goods are available user will get message: “Do you want to go to shopping cart? Yes/No”. If the user press “No” button, he will stay on the catalog of goods to continue the selection.
+To complete the order user should click “Yes” and after redirection to the Cart confirm the order by entering his phone number and delivery address and clicking on “Confirm the order” button. If entered data is correct the user will get the message on his phone with short info about the order. If some entered data is incorrect, user will get an error message and will be asked to Confirm the order again.
+1.	Build state transition diagram based on given information
+2.	Cover requirements above by tests (write test cases’ names and objectives) based on state transition analysis
