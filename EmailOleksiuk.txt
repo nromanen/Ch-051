@@ -1,0 +1,14 @@
+Subject : 'English' should be disable as a default 
+
+Good morning Marcelo,
+
+We have a question about the 'English' language link on the 'User info' page.
+
+In the description of user story http://ssu-jira.softserveinc.com/browse/CHOSBB-113 
+is identified that ‘English’ is enabled by default. At the same time is stated: it
+means that English localization is disabled.
+
+Could you please clarify these points.
+
+Thank you,
+Nadin Oleksiuk.
