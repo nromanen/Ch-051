@@ -1,0 +1,92 @@
+1. Equivalence partitioning and Boundary value analysis
+A system is designed to calculate the electricity cost. 
+User can enter only an old and a new values of electricity counter and press Calc button. 
+If data entered correctly and user consumed less than 100 kw the price of 1 kw will be 25 cents. 
+The calculator will count 1$ per 1 kw for more than 600 
+In another case it will count 65 cents per 1 kw.
+
+1. Build equivalence classes (partitions) based on given information
+2. Stand Out boundary values
+
+/Decision:/
+
+>100 - 1kw=25cent
+100-600 - 1kw=65 cent 
+<600 - 1kw=1$ 
+
+Add conditions for the fields 'New value' and 'Old value': 
+-Can contain numbers. 
+-Can't be equal to 0. 
+-Can't contain letters and reserved characters.
+
+1. Equivalence partitioning  3 test cases
+
+1	Put value  100 and 50 into input fields - Result:50		The calculator is counted 25 cent per 1 kw - Result:12.50
+2	Put value 400 and 100 into input fields - Result:300		The calculator is counted 65 cent per 1 kw - Result:195
+3	Put value 1000 and 300 into input fields - Result:700		The calculator is counted 1 $ per 1 kw - Result:700
+4 	Put value 0 and 0 into input fields 				Error message appears "You have entered an incorrect value" 
+5	Put value k and % into input fields 				Error message appears "You have entered an incorrect value" 
+
+
+2. Boundary value 2 test cases
+
+1	Put value  120 and 21 into input fields - Result:99		The calculator is counted 25 cent per 1 kw - Result:24.75
+2	Put value  250 and 150 into input fields - Result:100		The calculator is counted 65 cent per 1 kw - Result: 65
+3	Put value  999 and 399 into input fields - Result:600		The calculator is counted 65 cent per 1 kw - Result: 390	
+4	Put value  1822 and 1221 into input fields - Result:601		The calculator is counted 1 $ per 1 kw - Result: 601
+ 
+
+2. Decision tables
+
+If you are a new client in the caffe you get a discount card with 0 points. 
+Every time you make an order in a caffe you will receive points on the card.
+If you are existing customer and have on your discount card more than 5 000 points you will get 10% discounts every time you visit the 
+If you have a Gift Coupon – you will get one-time 25% discount. 
+This discount cannot be used with discount card but points will added to card.
+
+1. Build decision table based on given information.
+
+/Decision:/
+	
+	
+	Causes (inputs)  			R1	R2 	R3	R4	R5	R6
+	__________________________________________________________________________________	  
+	= o points - 0% discount		y	y	N	N	N	N		
+	< 5000 points - 10% discount		N	N	Y	Y	N	N
+	Gift Coupon - 25% discount		N	Y	N	Y	Y	N	
+	__________________________________________________________________________________
+	Discount 				0	25	10	25	25	0
+	Error							+		+	+
+
+	To do:	
+
+	Causes (inputs)  			R1	R2 	R3	R4
+	__________________________________________________________________		  
+	= o points - 0% discount		y	y	N	N		
+	< 5000 points - 10% discount		N	N	Y	Y	
+	Gift Coupon - 25% discount		N	Y	N	Y			
+	__________________________________________________________________
+	Discount 				0	25	10	25	
+	Error						+		+
+	
+
+3. State transition
+
+/Task:/
+User is doing an order on the web-store. He selects some goods from the catalog and clicks on “Add to cart” button. 
+If one/more selected goods aren’t available user will get the corresponding message and will be asked to correct the selection.
+If all selected goods are available user will get message: “Do you want to go to shopping cart? Yes/No”.
+If the user press “No” button, he will stay on the catalog of goods to continue the selection.
+To complete the order user should click “Yes” and after redirection to the Cart confirm the order by entering his phone number and delivery address and clicking on “Confirm the order” button. 
+If entered data is correct the user will get the message on his phone with short info about the order. 
+If some entered data is incorrect, user will get an error message and will be asked to Confirm the order again.
+1. Build state transition diagram based on given information
+2. Cover requirements above by tests (write test cases’ names and objectives) based on state transition analysis
+
+/Decision:/
+      1. State transition diagram link: https://drive.google.com/open?id=0B2xBqFYu1UUnZUZBZGxRaDBqWm8
+      2. 
+	TC1: Verify that user can add to the cart available product
+        TC2: Verify that user can't add to the cart unavailable product
+	TC3 (Precondition:TC1 is passed): Verify that user can confirm the order with valid data
+	TC4 (Precondition:TC1 is passed): Verify that user can't confirm the order with invalid data
