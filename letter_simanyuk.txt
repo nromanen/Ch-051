@@ -1,0 +1,24 @@
+Hello.
+There are next clarifications for the next stories:
+
+1.Story CHOSBB-116 - As a Supervisor I want to edit existing product:
+
+It will be better to change the button 'Ok' into 'Save'.
+After pressing the button 'Save', if some fields were changed, the modal dialog box should appear:
+'Are you sure you want to save the changes? (Y/N)'. 
+After pressing the button 'Cancel', if some fields were changed, the modal dialog box should appear:
+'All changes will be lost. Are you sure you want to cancel? (Y/N)'.
+If no fields were changed, after pressing buttons 'Save' or 'Cancel' the modal dialog box doesn't appear.
+
+The third item for "Acceptance criteria":
+Supervisor can quit without saving changes.
+
+2.Story CHOSBB-117 - As a Supervisor I want to see and filter the list of products on 'Item Management' tab:
+
+To change the field with links Delete into the field with the checkboxes and place this field
+at the first position of the table. Add the button 'Delete selected'.
+When you press the button and some checkboxes are checked, the modal dialog box should appear:
+'Are you sure you want to delete selected items (count of selected items)? (Y/N)'.
+
+
+Thank you.
