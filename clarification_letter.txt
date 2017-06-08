@@ -1,0 +1,18 @@
+Subject: Deleting a product item as a supervisor 
+
+Dear Mr. Jones,
+
+I’m writing to you with reference to requirements of the user story 115. During requirements’ analysis it has been found that acceptance criteria are basically stated twice in the description. Is it possible to combine the given acceptance criteria with the general description? We could organize it in the following way:
+
+Acceptance criteria:
+By pressing on ‘Delete’ link of the product :
+- Supervisor can delete an existing product and all its properties from the database by clicking on 'Ok' button of a dialog box.
+- Supervisor can cancel deletion of a product by clicking on 'Cancel' or 'Exit' button, the dialog box should disappear and no product should be deleted.
+
+Another point for clarification is the ‘Delete’ link – it’s not stated where it will be found on the page. For user’s convenience it would be better to have it next to every product item in the list. 
+
+Please let us know your thoughts about it.
+
+Yours sincerely,
+Iryna Horodetska
+
