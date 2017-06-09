@@ -1,0 +1,20 @@
+Hello Tom,
+
+After reviewing the Customer opportunity to his/her 'Customer type' assigned according to his/her total orders sum the discrepancy of ranges were found.
+They don’t match to the mock-up.  
+At the same time we have the duplicate data on the crossing of the each type of the range.
+
+To avoid misunderstanding I propose to change the ranges.
+
+Proposal for changing:
+Standard (no discount):	0-999
+Silver (5% discount):	1000-2999
+Gold (10% discount):	3000-9999
+Platinum (15% discount): 10000+
+
+Could you please approve.
+
+In case you have any questions please contact me.
+
+Regards,
+Burshtein Tetiana
