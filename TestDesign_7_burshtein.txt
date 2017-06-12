@@ -1,6 +1,4 @@
-Task is:
-1.	Design tests applying test design techniques
-2.	Create Test Cases in Zephyr for JIRA for all designed tests
+
 
 Variant 7
 1.	Equivalence partitioning and Boundary value analysis
@@ -49,22 +47,51 @@ To buy an train e-ticket user has to select the departure and destination cities
 
 2.	Decision tables
 
+
+
+Causes                   |R1 |R2 |R3 |R4 |R5 |R6 |R7 |R8 |
+____________________________________________________________
+Partner list, 20%        | Y | Y | Y | Y | N | N | N | N |
+____________________________________________________________
+>10 orders , 15%         | Y | Y | N | N | Y | Y | N | N |
+____________________________________________________________
+promotional period, 10%  | Y | N | Y | N | Y | N | Y | N |
+____________________________________________________________
+ 
+discount                 |35%|35%|20%|20%|25%|15%|10%|0% |
+_____________________________________________________________
+
+
+
+
+
 Causes                   |R1  |R3 |R5 |R6 |R7 |R8 |
-_______________________________________________________________
+___________________________________________________
 Partner list, 20%        |Y   |Y  |N  |N  |N  |N  |
-______________________________________________________________
+___________________________________________________
 >10 orders , 15%         |Y   |N  |Y  |Y  |N  |N  |
-_______________________________________________________________
+___________________________________________________
 promotional period, 10%  |Y/N |Y/N|Y  |N  |Y  |N  |
-_______________________________________________________________
+___________________________________________________
  
 discount                 |35% |20%|25%|15%|10%|0  | 
-_________________________________________________________________
-errors                     *    *
-_______________________________________________________________________
+___________________________________________________
+
 
 
 3.	State transition
+
+To buy an train e-ticket user has to select the departure and destination cities, and travel date and click “Search”. 
+When the system finds appropriate trains user can select appropriate train for him and select a place from the list of available places. 
+To continue the ticket ordering user enters his Last Name and First Name, e-mail and clicks “Pay”. 
+If data is entered incorrectly error-message will be shown: “Please, re-enter your personal data”. 
+If data entered correctly user will be redirected on payment page. 
+On this page user should enter the 16-digit number of card, period of validity and code of CVV2/CVC2 and then press “Pay”. 
+If entered data is correct, user will get email-notification that operation completed successfully. 
+In other case user will get error message on the screen and will be asked to correct data and press “Pay” again.
+
+1.	Build state transition diagram based on given information
+
 
 
 
