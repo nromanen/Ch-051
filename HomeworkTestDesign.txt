@@ -16,7 +16,6 @@ In another case it will count 65 cents per 1 kw.
 
 Add conditions for the fields 'New value' and 'Old value': 
 -Can contain numbers. 
--Can't be equal to 0. 
 -Can't contain letters and reserved characters.
 
 1. Equivalence partitioning  3 test cases
@@ -24,8 +23,7 @@ Add conditions for the fields 'New value' and 'Old value':
 1	Put value  100 and 50 into input fields - Result:50		The calculator is counted 25 cent per 1 kw - Result:12.50
 2	Put value 400 and 100 into input fields - Result:300		The calculator is counted 65 cent per 1 kw - Result:195
 3	Put value 1000 and 300 into input fields - Result:700		The calculator is counted 1 $ per 1 kw - Result:700
-4 	Put value 0 and 0 into input fields 				Error message appears "You have entered an incorrect value" 
-5	Put value k and % into input fields 				Error message appears "You have entered an incorrect value" 
+4	Put value k and % into input fields 				Error message appears "You have entered an incorrect value" 
 
 
 2. Boundary value 2 test cases
